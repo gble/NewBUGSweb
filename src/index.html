@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B.U.G.S!</title>
+</head>
+<body>
+    <div class=TopNav>
+        <a href="#main"><img src="../img/bugsLogo.png" height="50px", width="50px" id="bugs_logo"></a>
+        <a href="#main"><span id="BUGS" style="border: 20px;">BUGS</span></a>
+    </div>
+    <div class=main>
+        <div class=bugsMainText>BUGS</div>
+    </div>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+        html {
+            background-color: #121212;
+            font-family: 'Do Hyeon', sans-serif;
+        }
+        .TopNav {
+            position: fixed;
+            padding: 4px;
+            font-size: 50px;
+            float: left;
+            background-color:transparent;
+            width:100%;
+        }
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .main{
+            padding-top: 100px;
+        }
+        .bugsMainText {
+            animation-duration: 3s;
+             animation-name: slidein;
+             font-size: 100px;
+             color: white;
+        }  
+
+        @keyframes slidein {
+        from {
+            margin-left: 100%;
+            width: 300%
+        }
+
+        50% { font-size: 260px; 
+            margin-left: 25%; 
+            width: 150%; 
+        }
+
+        to {
+            margin-left: 0%;
+            width: 100%;
+        }
+        }
+    </style>
+</body>
+</html>
